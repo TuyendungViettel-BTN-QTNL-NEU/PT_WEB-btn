@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>NextJob - Nền tảng hỗ trợ tuyển dụng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+<!-- HERO SECTION -->
+    <section class="bg">
+        <div class="bg-overlay"></div>
+
+        <div class="container bg-content">
+            <h1>Khám phá cơ hội việc làm chất lượng</h1>
+            <p>Kết nối ứng viên với doanh nghiệp hàng đầu Việt Nam</p>
+
+            <div class="search-box">
+
+                <!-- Ô nhập vị trí -->
+                <input type="text" placeholder="Vị trí, kỹ năng, công ty...">
+
+                <!-- Ô chọn tỉnh -->
+                <input type="text" id="locationInput"
+                       placeholder="Chọn Tỉnh/Thành phố"
+                       readonly>
+
+                <!-- PANEL CHỌN TỈNH -->
+                <div class="location-panel">
+
+                    <div class="location-header">
+                        <input type="text" id="searchProvince"
+                               placeholder="Nhập Tỉnh/Thành phố">
+                    </div>
+
+                    <div class="location-body">
+                        <div class="province-list" id="provinceList"></div>
+
+                        <div class="province-empty">
+                            <p>Vui lòng chọn Tỉnh/Thành phố</p>
+                        </div>
+                    </div>
+
+                    <div class="location-footer">
+                        <button class="apply-btn">Áp dụng</button>
+                    </div>
+
+                </div>
+
+                <button class="btn-primary">Tìm việc</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DANH MỤC -->
+    <section class="categories container">
+        <h2>Ngành nghề phổ biến</h2>
+
+        <div class="category-grid">
+            <div class="category-card">Công nghệ thông tin</div>
+            <div class="category-card">Marketing</div>
+            <div class="category-card">Tài chính - Ngân hàng</div>
+            <div class="category-card">Kinh doanh</div>
+        </div>
+    </section>
+
+
+    <!-- JOB LIST -->
+    <section class="jobs container">
+        <h2>Việc làm mới nhất</h2>
+
+        <div class="job-grid">
+            <div class="job-card">
+                <div class="job-content">
+                    <h3>Nhân viên kiểm thử (Tester)</h3>
+                    <p class="company">Viettel Post • Hà Nội</p>
+                    <p class="salary">15 - 35 triệu</p>
+                </div>
+                <a href="JobsList/tester.html" class="btn-primary">Xem thông tin</a>
+            
+            </div>
+
+            <div class="job-card">
+                <h3>[VTPOST X FEDEX] Nhân viên giao hàng xe máy</h3>
+                <p class="company">Viettel Post • Hải Phòng</p>
+                <p class="salary">18 - 30 triệu</p>
+                <a href = "JobsList/tester.html" class="btn-primary">Xem thông tin</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Kỹ sư dữ liệu (Data Engineer)</h3>
+                <p class="company">MB Bank • Hà Nội</p>
+                <p class="salary">20 - 35 triệu</p>
+                <button class="btn-primary">Xem thông tin</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Kỹ sư AI (AI Engineer)</h3>
+                <p class="company">MB Bank • Hà Nội</p>
+                <p class="salary">20 - 35 triệu</p>
+                <button class="btn-primary">Xem thông tin</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Nhân viên sale/ marketing</h3>
+                <p class="company">TCT automation • Hà Nội</p>
+                <p class="salary">20 - 35 triệu</p>
+                <button class="btn-primary">Xem thông tin</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Nhân viên kỹ thuật</h3>
+                <p class="company">TCT automation • Hà Nội</p>
+                <p class="salary">20 - 35 triệu</p>
+                <button class="btn-primary">Xem thông tin</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Bạn là nhà tuyển dụng?</h2>
+            <p>Đăng tin tuyển dụng và tiếp cận hàng nghìn ứng viên chất lượng</p>
+            <button class="btn-white">Đăng tin ngay</button>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+
+            <div>
+                <h4>NextJob</h4>
+                <p>Nền tảng tuyển dụng thông minh</p>
+            </div>
+
+            <div>
+                <h4>Ứng viên</h4>
+                <p>Tìm việc</p>
+                <p>Tạo CV</p>
+            </div>
+
+            <div>
+                <h4>Nhà tuyển dụng</h4>
+                <p>Đăng tin</p>
+                <p>Tìm hồ sơ</p>
+            </div>
+
+            <div>
+                <h4>Liên hệ</h4>
+                <p>Email: contact@nextjob.vn</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- SCRIPT -->
+    <script>
+
+        const provinces = [
+        "An Giang","Bắc Giang","Bắc Ninh","Bình Dương","Bình Định",
+        "Cà Mau","Cần Thơ","Cao Bằng","Đà Nẵng","Đắk Lắk",
+        "Đồng Nai","Đồng Tháp","Gia Lai","Hà Giang","Hà Nội",
+        "Hà Tĩnh","Hải Phòng","Hưng Yên","Khánh Hòa","Lai Châu",
+        "Lâm Đồng","Lạng Sơn","Lào Cai","Nghệ An","Ninh Bình",
+        "Phú Thọ","Quảng Ninh","Quảng Ngãi","Quảng Trị",
+        "Sóc Trăng","Tây Ninh","Thái Nguyên","Thanh Hóa",
+        "TP. Hồ Chí Minh"
+        ];
+
+        provinces.sort((a,b)=>a.localeCompare(b,'vi'));
+
+        const list = document.getElementById("provinceList");
+        const locationInput = document.getElementById("locationInput");
+        const locationPanel = document.querySelector(".location-panel");
+
+        function renderList(filter=""){
+            list.innerHTML="";
+            provinces
+                .filter(p=>p.toLowerCase().includes(filter.toLowerCase()))
+                .forEach(p=>{
+                    const item = document.createElement("label");
+                    item.className="province-item";
+                    item.innerHTML=`<input type="checkbox" value="${p}"> ${p}`;
+                    list.appendChild(item);
+                });
+        }
+
+        renderList();
+
+        document.getElementById("searchProvince")
+        .addEventListener("keyup",function(){
+            renderList(this.value);
+        });
+
+        locationInput.addEventListener("click", function() {
+            locationPanel.classList.add("active");
+        });
+
+        document.addEventListener("click", function(e) {
+            if (!locationPanel.contains(e.target) && e.target !== locationInput) {
+                locationPanel.classList.remove("active");
+            }
+        });
+
+        document.querySelector(".apply-btn")
+        .addEventListener("click", function(){
+
+            const checked = document.querySelectorAll(".province-item input:checked");
+            const selected = Array.from(checked).map(i => i.value);
+
+            locationInput.value = selected.join(", ");
+            locationPanel.classList.remove("active");
+        });
+        
+<!-- Chỉnh phần Header-->
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+</body>
+</html>

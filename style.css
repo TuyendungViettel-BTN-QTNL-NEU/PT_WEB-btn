@@ -401,3 +401,20 @@ footer{
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     gap:30px;
 }
+
+/* ========== FORM ĐĂNG KÝ TUYỂN DỤNG ============*/
+.formdk {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* khoảng cách giữa label và input */
+}
+
+.formdk label {
+    width: 150px; /* cố định độ rộng chữ */
+    font-weight: bold;
+}
+
+.formdk input {
+    flex: 1; /* input chiếm hết phần còn lại */
+    padding: 8px;
+}

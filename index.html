@@ -60,10 +60,10 @@
 
     <!-- DANH MỤC -->
     <section class="categories container">
-        <h2>Ngành nghề phổ biến</h2>
+        <h2>Các nhóm ngành nghề phổ biến</h2>
 
         <div class="category-grid">
-            <div class="category-card">Công nghệ thông tin</div>
+            <div class="category-card">Công nghệ thông tin - kỹ thuật</div>
             <div class="category-card">Marketing</div>
             <div class="category-card">Tài chính - Ngân hàng</div>
             <div class="category-card">Kinh doanh</div>
@@ -89,8 +89,8 @@
             <div class="job-card">
                 <h3>[VTPOST X FEDEX] Nhân viên giao hàng xe máy</h3>
                 <p class="company">Viettel Post • Hải Phòng</p>
-                <p class="salary">18 - 30 triệu</p>
-                <a href = "JobsList/tester.html" class="btn-primary">Xem thông tin</a>
+                <p class="salary">8 - 18 triệu</p>
+                <a href = "JobsList/delivery.html" class="btn-primary">Xem thông tin</a>
             </div>
 
             <div class="job-card">
@@ -130,7 +130,7 @@
         <div class="container">
             <h2>Bạn là nhà tuyển dụng?</h2>
             <p>Đăng tin tuyển dụng và tiếp cận hàng nghìn ứng viên chất lượng</p>
-            <button class="btn-white">Đăng tin ngay</button>
+            <a href = "active/dangtin.html" class="btn-primary">Đăng tin ngay</a>
         </div>
     </section>
 
@@ -224,7 +224,7 @@
             locationPanel.classList.remove("active");
         });
         
-<!-- Chỉnh phần Header-->
+// Chỉnh phần Header
         fetch("header.html")
         .then(response => response.text())
         .then(data => {

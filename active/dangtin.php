@@ -10,7 +10,7 @@
 <body>
 
 <!-- HEADER -->
-<div id="header-placeholder"></div>
+<?php include "../header.php"; ?>
 
 <section class="container" style="padding:40px 0;">
 
@@ -123,8 +123,8 @@
             </div>
 
             <div style="display:flex; justify-content:space-between; margin-top:30px;">
-                <a href="../index.html" class="btn-primary">Quay lại</a>
-                <a href= "tbdangtin.html" class="btn-primary">Đăng tin</a>
+                <a href="../index.php" class="btn-primary">Quay lại</a>
+                <a href= "tbdangtin.php" class="btn-primary">Đăng tin</a>
             </div>
 
         </form>
@@ -132,15 +132,6 @@
     </div>
 
 </section>
-
-<script>
-// Load header
-fetch("../header.html")
-.then(response => response.text())
-.then(data => {
-    document.getElementById("header-placeholder").innerHTML = data;
-});
-</script>
 
 </body>
 </html>

@@ -23,7 +23,7 @@
 <body>
 
 <!-- HEADER -->
-<div id="header-placeholder"></div>
+<?php include "../header.php"; ?>
 
 <div class="container bg-content" style = 'color: #004a99'>
     <h1>Nộp hồ sơ của bạn tại đây</h1>
@@ -72,8 +72,8 @@
             </div>
 
             <div style="display:flex; justify-content:space-between; margin-top:30px;">
-                <a href="../index.html" class="btn-primary">Quay lại</a>
-                <a href="camon.html" class="btn-primary">Gửi đơn ứng tuyển</a>
+                <a href="../index.php" class="btn-primary">Quay lại</a>
+                <a href="camon.php" class="btn-primary">Gửi đơn ứng tuyển</a>
             </div>
 
         </form>
@@ -82,12 +82,5 @@
 
 </section>
 
-<script>
-    fetch("../header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
-        });
-</script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
 
 <!-- HEADER -->
-    <div id="header-placeholder"></div>
+    <?php include "header.php"; ?>
 
 <!-- HERO SECTION -->
     <section class="bg">
@@ -82,7 +82,7 @@
                     <p class="company">Viettel Post • Hà Nội</p>
                     <p class="salary">15 - 35 triệu</p>
                 </div>
-                <a href="JobsList/tester.html" class="btn-primary">Xem thông tin</a>
+                <a href="JobsList/tester.php" class="btn-primary">Xem thông tin</a>
             
             </div>
 
@@ -90,7 +90,7 @@
                 <h3>[VTPOST X FEDEX] Nhân viên giao hàng xe máy</h3>
                 <p class="company">Viettel Post • Hải Phòng</p>
                 <p class="salary">8 - 18 triệu</p>
-                <a href = "JobsList/delivery.html" class="btn-primary">Xem thông tin</a>
+                <a href = "JobsList/delivery.php" class="btn-primary">Xem thông tin</a>
             </div>
 
             <div class="job-card">
@@ -224,13 +224,7 @@
             locationPanel.classList.remove("active");
         });
         
-// Chỉnh phần Header
-        fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script>
+
 
 </body>
 </html>

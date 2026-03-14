@@ -22,7 +22,7 @@
 <body>
 
 <!-- HEADER -->
-<div id="header-placeholder"></div>
+<?php include "../header.php"; ?>
 
 <div class="container bg-content" 
      style="color:#004a99; display:flex; justify-content:center; align-items:center; min-height:calc(100vh - 80px);">
@@ -33,17 +33,10 @@
             Chúng tôi sẽ duyệt bài của bạn trong thời gian sớm nhất
         </p>
 
-        <a href="../index.html" class="btn-primary">Quay lại trang tuyển dụng</a>
+        <a href="../index.php" class="btn-primary">Quay lại trang tuyển dụng</a>
     </div>
 
 </div>
-<script>
-    fetch("../header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
-        });
-</script>
 
 </body>
 </html>

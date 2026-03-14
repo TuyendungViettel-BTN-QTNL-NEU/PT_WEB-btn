@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container header-flex">
         <div class="logo">
-            <img src="/NextJob.png" alt="NextJob Logo">
+            <img src="NextJob.png" alt="NextJob Logo">
         </div>
 
         <nav class="nav-menu">

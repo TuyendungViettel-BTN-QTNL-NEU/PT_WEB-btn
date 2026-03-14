@@ -10,7 +10,7 @@
 <body>
 
 <!-- HEADER -->
-<div id="header-placeholder"></div>
+<?php include "../header.php"; ?>
 
 <!-- THÔNG TIN TUYỂN DỤNG -->
 <div class="container bg-content" style = 'color: #004a99'>
@@ -101,22 +101,14 @@
         </ul>
 
         <div style="margin-top:40px; text-align:center;">
-            <a href="../index.html" class="btn-primary">Quay lại trang tuyển dụng</a>
-            <a href="../active/formdk.html" class="btn-primary">Ứng tuyển ngay</a>
+            <a href="../index.php" class="btn-primary">Quay lại trang tuyển dụng</a>
+            <a href="../active/formdk.php" class="btn-primary">Ứng tuyển ngay</a>
 
         </div>
 
     </div>
 
 </section>
-
-<script>
-    fetch("../header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
-        });
-</script>
 
 </body>
 </html>

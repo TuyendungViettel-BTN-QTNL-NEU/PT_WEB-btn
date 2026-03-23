@@ -109,14 +109,14 @@
 
             <div class="job-card">
                 <h3>Nhân viên sale/ marketing</h3>
-                <p class="company">TCT automation • Hà Nội</p>
+                <p class="company">TCT automation • Bắc Ninh</p>
                 <p class="salary">20 - 35 triệu</p>
                 <button class="btn-primary">Xem thông tin</button>
             </div>
 
             <div class="job-card">
                 <h3>Nhân viên kỹ thuật</h3>
-                <p class="company">TCT automation • Hà Nội</p>
+                <p class="company">TCT automation • Bắc Ninh</p>
                 <p class="salary">20 - 35 triệu</p>
                 <button class="btn-primary">Xem thông tin</button>
             </div>

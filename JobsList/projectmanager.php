@@ -25,7 +25,6 @@
         <h3>1. Xác định công việc</h3>
         <ul style="padding-left:25px; line-height:1.6;">
             <li>Tên vị trí: Quản lý dự án</li>
-            <li>Phòng ban: Bộ phận giao nhận</li>
             <li>Địa điểm làm việc: Tòa nhà Việt Á, số 9 Duy Tân, Phường Cầu Giấy </li>
             <li>Cấp bậc vị trí: Quản lý</li>
             <li>Mức lương: Thỏa thuận</li>
